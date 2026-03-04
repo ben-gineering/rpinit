@@ -62,7 +62,7 @@ LAZYGIT_VERSION="$(
 )"
 
 curl -fsSL \
-  "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_linux_arm64.tar.gz" \
+  "https://github.com/jesseduffield/lazygit/releases/download/${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION#v}_linux_arm64.tar.gz" \
   -o /tmp/lazygit.tar.gz
 
 tar -C /usr/local/bin -xzf /tmp/lazygit.tar.gz lazygit
@@ -75,7 +75,7 @@ LAZYDOCKER_VERSION="$(
 )"
 
 curl -fsSL \
-  "https://github.com/jesseduffield/lazydocker/releases/download/v${LAZYDOCKER_VERSION}/lazydocker_${LAZYDOCKER_VERSION}_Linux_arm64.tar.gz" \
+  "https://github.com/jesseduffield/lazydocker/releases/download/${LAZYDOCKER_VERSION}/lazydocker_${LAZYDOCKER_VERSION#v}_Linux_arm64.tar.gz" \
   -o /tmp/lazydocker.tar.gz
 
 tar -C /usr/local/bin -xzf /tmp/lazydocker.tar.gz lazydocker
