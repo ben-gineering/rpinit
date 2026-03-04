@@ -32,4 +32,9 @@ chmod +x setup-rpi.sh
 sudo ./setup-rpi.sh
 ```
 
+**One-liner:**
+```bash
+git clone https://gitlab.com/b.engineer/rpinit.git && cd rpinit && sudo bash setup-rpi.sh
+```
+
 After it finishes, open a new shell session so the vi-mode and editor settings take effect.
