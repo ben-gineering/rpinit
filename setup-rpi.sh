@@ -17,9 +17,9 @@ echo "[1/6] Updating and upgrading apt packages..."
 apt-get update -y
 apt-get upgrade -y
 
-echo "[2/7] Installing base packages (curl, git, unzip, docker, nodejs, npm, neovim)..."
+echo "[2/7] Installing base packages (curl, git, unzip, docker, docker-compose, tree, lf, nodejs, npm, neovim)..."
 apt-get install -y \
-  curl git unzip docker.io nodejs npm neovim ca-certificates tar gzip
+  curl git unzip tree lf docker.io docker-compose nodejs npm neovim ca-certificates tar gzip
 
 echo "[3/7] Enabling vi mode for bash (set -o vi)..."
 default_user="${SUDO_USER:-pi}"
