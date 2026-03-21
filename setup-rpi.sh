@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Simple Raspberry Pi OS (64-bit) setup script.
-# Installs: neovim, lazygit, lazydocker, opencode (npm, v1.1.53)
+# Installs: neovim, lazygit, lazydocker, opencode (npm, latest)
 # and enables vi-mode for bash.
 
 if [[ $(id -u) -ne 0 ]]; then
@@ -81,8 +81,8 @@ curl -fsSL \
 tar -C /usr/local/bin -xzf /tmp/lazydocker.tar.gz lazydocker
 rm -f /tmp/lazydocker.tar.gz
 
-echo "[7/7] Installing OpenCode CLI (opencode-ai@1.1.53) via npm..."
-npm install -g opencode-ai@1.1.53
+echo "[7/7] Installing OpenCode CLI (opencode-ai latest) via npm..."
+npm install -g opencode-ai
 
-echo "\nDone. Installed: neovim, lazygit, lazydocker, opencode-ai@1.1.53."
+echo "\nDone. Installed: neovim, lazygit, lazydocker, opencode-ai (latest)."
 echo "Open a new shell for vi-mode and default editor settings to take effect."
