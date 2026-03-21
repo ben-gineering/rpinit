@@ -11,7 +11,7 @@ The script installs a few tools I regularly use and tweaks the shell configurati
   - neovim
   - lazygit (latest release, linux arm64)
   - lazydocker (latest release, Linux arm64)
-  - OpenCode CLI (`opencode-ai@1.1.53` via npm)
+   - OpenCode CLI (`opencode-ai` latest via npm)
   - Supporting tools: `curl`, `git`, `unzip`, `docker.io`, `nodejs`, `npm`, `tar`, `gzip`, `ca-certificates`
 - Enables bash vi-mode by adding `set -o vi` to the user `.bashrc`
 - Sets `EDITOR` and `VISUAL` to `nvim` in common shell profile files
